@@ -18,7 +18,7 @@
          <a-box position='0 0.5 0' material='opacity: 0.5; color: blue;'></a-box>
       </a-marker>
 <!-- setup scene for christ church spitalfields -->      
-      <a-marker preset='hiro' type='pattern' url='https://cdn.rawgit.com/JonoMacC/git-galore/master/church_spire.patt'>
+      <a-marker preset='custom' type='pattern' url='https://cdn.rawgit.com/JonoMacC/git-galore/master/church_spire.patt'>
          <a-box position='0 0.5 0' material='opacity: 0.5; color: green;'></a-box>
       </a-marker>
       <a-entity camera></a-entity>
