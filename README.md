@@ -3,7 +3,7 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 <!-- initialize AR scene -->	
-   <a-scene embedded arjs='sourceType: webcam;'>
+   <a-scene embedded arjs='sourceType: webcam; debugUIenabled: false;'>
 <!-- define assets -->
 <a-assets>
    <imd id="" src="">
@@ -23,4 +23,4 @@
       </a-marker>
       <a-entity camera></a-entity>
 	</a-scene>
-</body>
+	   </body>
