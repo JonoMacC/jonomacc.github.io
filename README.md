@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/JonoMacC/jonomacc.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JonoMacC/jonomacc.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<!-- initialize AR scene -->	
+   <a-scene embedded arjs='sourceType: webcam;'>
+<!-- setup scene for Spitalfields Roman Woman coffin -->	
+		<a-marker preset='custom' type='pattern'     url='https://cdn.rawgit.com/JonoMacC/git-galore/master/scallop_shell.patt'>
+          <a-text value="Spitalfields Roman Woman" position='0 0.5 0' rotation='0 45 0'></a-text>
+         <a-sphere position='0 1 0' material='opacity: 0.5; color: #4CC3D9; radius: 0.5;'></a-sphere>
+      </a-marker>
+<!-- setup scene for copperplate map windmills -->      
+      <a-marker preset='custom' type='pattern' url='https://cdn.rawgit.com/JonoMacC/git-galore/master/pattern-marker%20(5).patt'>
+         <a-box position='0 0.5 0' material='opacity: 0.5; color: blue;'></a-box>
+      </a-marker>
+<!-- setup scene for christ church spitalfields -->      
+      <a-marker preset='hiro'>
+         <a-box position='0 0.5 0' material='opacity: 0.5; color: green;'></a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+	</a-scene>
+</body>
